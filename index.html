@@ -21,4 +21,1325 @@
 
         .header {
             background: rgba(255, 255, 255, 0.05);
-            backdrop-fil
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-mister-ia {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: rgba(99, 102, 241, 0.2);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px 0;
+            margin-top: 80px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .back-button {
+            background: rgba(99, 102, 241, 0.2);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #6366f1;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .back-button:hover {
+            background: rgba(99, 102, 241, 0.3);
+            transform: translateX(-2px);
+        }
+
+        .breadcrumb-item {
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-item:hover {
+            color: #6366f1;
+        }
+
+        .breadcrumb-item.active {
+            color: #ffffff;
+        }
+
+        .breadcrumb-separator {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .main-content {
+            min-height: calc(100vh - 120px);
+        }
+
+        .page {
+            display: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 80px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-title {
+            font-size: 3.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff, #e2e8f0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .context-section {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .context-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .context-text {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        .stats-simple {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card-simple {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card-simple:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .stat-number-simple {
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label-simple {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .navigation-section {
+            text-align: center;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-title {
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff, #e2e8f0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .page-description {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .filter-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-box::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .stats-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .count-display {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .cases-grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .case-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .case-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        .case-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .case-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .case-details {
+            flex: 1;
+        }
+
+        .case-person {
+            font-size: 0.95em;
+            color: #6366f1;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .case-service {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.6);
+            font-style: italic;
+        }
+
+        .case-transverse {
+            font-size: 0.85em;
+            color: #fbbf24;
+            font-weight: 600;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .badge-augmentation {
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .badge-automatisation {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .members-grid {
+            display: grid;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .member-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        .member-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .member-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .member-service {
+            background: rgba(99, 102, 241, 0.2);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #ffffff;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .member-position {
+            font-size: 1em;
+            font-weight: 600;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            margin-bottom: 15px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .member-vision {
+            font-size: 1em;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.4em;
+            }
+
+            .hero-section {
+                padding: 60px 20px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .member-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .member-service {
+                align-self: flex-start;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-mister-ia">🤖 Mister IA</div>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active" onclick="showPage('accueil')">Accueil</div>
+                <div class="nav-item" onclick="showPage('exploration')">Cas d'usage</div>
+                <div class="nav-item" onclick="showPage('comite')">Comité Éthique</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb" id="breadcrumb" style="display: none;">
+        <div class="breadcrumb-container">
+            <div class="back-button" onclick="goBack()">
+                ← Retour
+            </div>
+            <div class="breadcrumb-item" onclick="showPage('accueil')">Accueil</div>
+            <span class="breadcrumb-separator">›</span>
+            <div class="breadcrumb-item active" id="currentPageBreadcrumb">Page actuelle</div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+        <!-- PAGE D'ACCUEIL -->
+        <div id="accueil" class="page active fade-in">
+            <section class="hero-section">
+                <h1 class="hero-title">Première Cartographie des Cas d'Usage IA</h1>
+                <p class="hero-subtitle">
+                    Résultat d'un atelier d'1h15 avec le Comité Éthique d'OPAC36, 
+                    offrant un premier aperçu d'un travail bien plus conséquent à venir.
+                </p>
+                
+                <div class="context-section">
+                    <div class="context-title">📋 Contexte de l'atelier</div>
+                    <div class="context-text">
+                        Cette cartographie constitue une première exploration des opportunités d'intelligence artificielle 
+                        au sein d'OPAC36. Elle précède les recommandations approfondies de <strong>Mister IA</strong> 
+                        suite à un audit complet de certains métiers qui sera potentiellement réalisé ultérieurement.
+                    </div>
+                </div>
+            </section>
+
+            <div class="stats-simple">
+                <div class="stat-card-simple">
+                    <span class="stat-number-simple">75</span>
+                    <div class="stat-label-simple">Cas d'usage identifiés</div>
+                </div>
+                <div class="stat-card-simple">
+                    <span class="stat-number-simple">12</span>
+                    <div class="stat-label-simple">Services impliqués</div>
+                </div>
+                <div class="stat-card-simple">
+                    <span class="stat-number-simple">2</span>
+                    <div class="stat-label-simple">Catégories principales</div>
+                </div>
+            </div>
+
+            <section class="navigation-section">
+                <h2 class="nav-title">Explorer les Cas d'Usage</h2>
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="showPage('exploration')">
+                        🔍 Explorer les cas d'usage
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE EXPLORATION -->
+        <div id="exploration" class="page">
+            <div class="page-header">
+                <h1 class="page-title">🔍 Explorer les Cas d'Usage</h1>
+                <p class="page-description">
+                    Découvrez les opportunités d'IA identifiées, réparties en deux approches stratégiques
+                </p>
+            </div>
+
+            <div class="navigation-section">
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="showPage('augmentation')">
+                        🚀 Cas d'Augmentation
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPage('automatisation')">
+                        ⚙️ Cas d'Automatisation
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE AUGMENTATION -->
+        <div id="augmentation" class="page">
+            <div class="page-header">
+                <h1 class="page-title">🚀 Cas d'Usage en Augmentation</h1>
+                <p class="page-description">
+                    Utilisation d'outils IA génératifs existants pour améliorer l'efficacité des collaborateurs
+                </p>
+            </div>
+
+            <div class="filter-section">
+                <input type="text" class="search-box" placeholder="🔍 Rechercher dans les cas d'augmentation..." id="searchAugmentation" onkeyup="filterCases('augmentation')">
+                <div class="stats-header">
+                    <div class="count-display" id="augmentationCount">Chargement...</div>
+                    <div style="font-size: 0.9em; color: rgba(255,255,255,0.7);">Quick wins avec outils existants</div>
+                </div>
+            </div>
+
+            <div class="cases-grid" id="augmentationGrid">
+                <!-- Les cas seront générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- PAGE AUTOMATISATION -->
+        <div id="automatisation" class="page">
+            <div class="page-header">
+                <h1 class="page-title">⚙️ Cas d'Usage en Automatisation</h1>
+                <p class="page-description">
+                    Solutions sur-mesure nécessitant des développements spécifiques ou des intégrations complexes
+                </p>
+            </div>
+
+            <div class="filter-section">
+                <input type="text" class="search-box" placeholder="🔍 Rechercher dans les cas d'automatisation..." id="searchAutomatisation" onkeyup="filterCases('automatisation')">
+                <div class="stats-header">
+                    <div class="count-display" id="automatisationCount">Chargement...</div>
+                    <div style="font-size: 0.9em; color: rgba(255,255,255,0.7);">Développements sur-mesure</div>
+                </div>
+            </div>
+
+            <div class="cases-grid" id="automatisationGrid">
+                <!-- Les cas seront générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- PAGE COMITÉ ÉTHIQUE -->
+        <div id="comite" class="page">
+            <div class="page-header">
+                <h1 class="page-title">👥 Comité Éthique OPAC36</h1>
+                <p class="page-description">
+                    Présentation des membres du Comité Éthique et de leur vision de l'Intelligence Artificielle
+                </p>
+            </div>
+
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Sébastien Cherré</h3>
+                        <div class="member-service">DSI</div>
+                    </div>
+                    <div class="member-position">Ni pro ni anti</div>
+                    <div class="member-vision">
+                        S'inscrire dans une démarche servira notre organisme, en cadrant le déploiement et en l'intégrant dans nos process, en la faisant accepter par nos collaborateurs
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Fabienne Fenion</h3>
+                        <div class="member-service">Achat</div>
+                    </div>
+                    <div class="member-position">Favorable - Utilisatrice active</div>
+                    <div class="member-vision">
+                        Utilise ChatGPT et Mistral, j'ai vu l'intérêt dans nos métiers qui demandent beaucoup de rédaction et d'analyse.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Julie Jerbeau</h3>
+                        <div class="member-service">Secrétaire générale</div>
+                    </div>
+                    <div class="member-position">Évolution positive</div>
+                    <div class="member-vision">
+                        Assez réticente par souci de sécurité. De plus en plus en faveur car nous pouvons gagner du temps sur des tâches comme les impayés, l'envoi des courriers.<br>
+                        Un peu d'usage de ChatGPT pour structurer des idées. Perplexity pour dégrossir des axes de recherche.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Aurélie Demareai</h3>
+                        <div class="member-service">DRH</div>
+                    </div>
+                    <div class="member-position">Utilisatrice pragmatique</div>
+                    <div class="member-vision">
+                        Utilise pour des tâches sans valeur ajoutée pour de la formulation, répondre à des emails aux collaborateurs. Utilise ChatGPT, Perplexity pour des recherches sur le code du travail, questions réglementaires.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Pascale Sultana</h3>
+                        <div class="member-service">Dir Finance/admin</div>
+                    </div>
+                    <div class="member-position">Non-utilisatrice</div>
+                    <div class="member-vision">
+                        Pas de réflexe IA.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Pierre Richarmzentier</h3>
+                        <div class="member-service">Directeur commercial</div>
+                    </div>
+                    <div class="member-position">En questionnement</div>
+                    <div class="member-vision">
+                        N'utilise pas d'outils IA. Pas de réflexe IA. Ne perçois pas l'usage que je peux en faire au quotidien.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">David Lavillonniere</h3>
+                        <div class="member-service">Directeur patrimoine</div>
+                    </div>
+                    <div class="member-position">En expérimentation</div>
+                    <div class="member-vision">
+                        Un peu de Perplexity et Copilot. Besoin de montée en compétences pour faire des scripts. Ce que j'essaie aujourd'hui ne me convient pas en tant que résultat.<br>
+                        L'IA pourrait m'aider pour les appels d'offres, suivi de chantier. Dans l'attente de visualiser les outils pour voir ce que je peux optimiser ou améliorer.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Directeur général</h3>
+                        <div class="member-service">Direction générale</div>
+                    </div>
+                    <div class="member-position">Moteur du changement</div>
+                    <div class="member-vision">
+                        Amener l'ensemble des équipes vers l'IA, structurer/organiser la démarche. Faire évoluer l'établissement même si on utilise déjà.<br>
+                        Avoir un comité de direction qui maîtrise pour favoriser le ruissellement auprès des équipes. Je "m'amuse" avec Copilot. Moteur.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Marie Charlotte Le Charreau</h3>
+                        <div class="member-service">Directrice générale adjointe chargée de la gestion locative et gestion client</div>
+                    </div>
+                    <div class="member-position">Visionnaire pragmatique</div>
+                    <div class="member-vision">
+                        J'ai vécu la révolution d'internet, je pense que nous vivons la même chose avec l'arrivée de l'IA.<br>
+                        J'ai déjà en tête plusieurs process pouvant bénéficier de l'IA. Le faire sans remettre en cause ce qui a été déployé, réussir à tracer nos démarches/actions au sein d'un même outil.<br>
+                        Un peu de ChatGPT, Perplexity en gratuit.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">David Noch</h3>
+                        <div class="member-service">Adjoint DSI</div>
+                    </div>
+                    <div class="member-position">Passionné et expert</div>
+                    <div class="member-vision">
+                        Sensibilité de plus en plus importante. Je suis un passionné à titre individuel.<br>
+                        J'ai testé les derniers outils IA de l'IA agentique. J'apprends à faire tourner les modèles IA en local. Manuis AI.<br>
+                        J'aime vulgariser ça auprès de mon entourage.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Echar Péz</h3>
+                        <div class="member-service">Directeur développement</div>
+                    </div>
+                    <div class="member-position">Utilisateur régulier</div>
+                    <div class="member-vision">
+                        ChatGPT principalement.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Tiffany Lodet</h3>
+                        <div class="member-service">Représentante CSE, Responsable communication</div>
+                    </div>
+                    <div class="member-position">Optimiste et concrète</div>
+                    <div class="member-vision">
+                        Nous allons utiliser Playplay pour les vidéos. On va avoir un gain énorme. Il y a des limites mais un potentiel énorme.
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-header">
+                        <h3 class="member-name">Alban Forichon</h3>
+                        <div class="member-service">Juriste</div>
+                    </div>
+                    <div class="member-position">Utilisateur prudent</div>
+                    <div class="member-vision">
+                        Utilisé 4/5 fois ChatGPT pour de la recherche juridique, rien de plus. Veille juridique.<br>
+                        L'IA doit être utilisée à bon escient.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Historique de navigation
+        let navigationHistory = ['accueil'];
+
+        // Données des cas d'usage avec personnes et services
+        const allUseCases = [
+            // Cas d'Augmentation
+            { 
+                text: "Générer un modèle de note de cadrage projet à partir d'un formulaire structuré", 
+                category: "Augmentation",
+                person: "Sébastien Cherré",
+                service: "DSI"
+            },
+            { 
+                text: "Rédiger des courriers personnalisés de relance locative à partir des données Prem", 
+                category: "Augmentation",
+                person: "Julie Jerbeau",
+                service: "Secrétaire générale"
+            },
+            { 
+                text: "Compiler les nouveautés juridiques hebdomadaires en fonction de thématiques suivies", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Générer un communiqué de presse à partir d'un contenu brut structuré", 
+                category: "Augmentation",
+                person: "Tiffany Lodet",
+                service: "Responsable communication"
+            },
+            { 
+                text: "Rédiger une offre d'emploi structurée à partir d'un modèle par poste", 
+                category: "Augmentation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Produire une note juridique en appui à un contentieux", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Analyser un CCTP pour élaborer une stratégie d'achat adaptée", 
+                category: "Augmentation",
+                person: "Fabienne Fenion",
+                service: "Achat"
+            },
+            { 
+                text: "Rédiger un rapport d'analyse d'offre selon les critères du règlement", 
+                category: "Augmentation",
+                person: "Echar Péz",
+                service: "Directeur développement"
+            },
+            { 
+                text: "Générer un script de vidéo simple à partir d'un contenu destiné à PLAY", 
+                category: "Augmentation",
+                person: "Tiffany Lodet",
+                service: "Responsable communication"
+            },
+            { 
+                text: "Structurer une communication interne selon la cible RH", 
+                category: "Augmentation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Rédiger une réponse juridique contextualisée à partir des textes de référence", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Créer des publications sur les réseaux sociaux à partir d'évènements", 
+                category: "Augmentation",
+                person: "Tiffany Lodet",
+                service: "Responsable communication"
+            },
+            { 
+                text: "Produire un compte rendu de réunion à partir de notes ou enregistrement audio", 
+                category: "Augmentation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Élaborer un ordre du jour CAL à partir des dossiers à traiter", 
+                category: "Augmentation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Générer une lettre de relance personnalisée selon l'historique locataire", 
+                category: "Augmentation",
+                person: "Julie Jerbeau",
+                service: "Secrétaire générale"
+            },
+            { 
+                text: "Rédiger un courrier à locataire suite à une médiation", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Proposer une trame de CCTP selon le type de marché saisi", 
+                category: "Augmentation",
+                person: "David Lavillonniere",
+                service: "Directeur patrimoine"
+            },
+            { 
+                text: "Générer un flyer ou support visuel à partir d'un contenu textuel", 
+                category: "Augmentation",
+                person: "Tiffany Lodet",
+                service: "Responsable communication"
+            },
+            { 
+                text: "Structurer un document pour rendre compte d'une situation locative sensible", 
+                category: "Augmentation",
+                person: "Julie Jerbeau",
+                service: "Secrétaire générale"
+            },
+            { 
+                text: "Rédiger un projet à partir d'une expression de besoin formalisée", 
+                category: "Augmentation",
+                person: "Sébastien Cherré",
+                service: "DSI"
+            },
+            { 
+                text: "Compiler une analyse d'offres pluridisciplinaire à partir des mémoires techniques", 
+                category: "Augmentation",
+                person: "Sébastien Cherré",
+                service: "DSI"
+            },
+            { 
+                text: "Générer un accord collectif prérempli à partir des éléments de négociation RH", 
+                category: "Augmentation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Rédiger une mention RGPD selon le type de traitement", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Préparer un courrier en masse à partir d'un modèle avec variables", 
+                category: "Augmentation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Générer des emails de réponse aux demandeurs depuis leur dossier", 
+                category: "Augmentation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Créer une fiche synthèse demandeur à présenter en CAL", 
+                category: "Augmentation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Répondre à une réclamation par mail en s'appuyant sur les actions précédentes", 
+                category: "Augmentation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Rédiger un bail prérempli à partir de champs administratifs", 
+                category: "Augmentation",
+                person: "Alban Forichon",
+                service: "Juriste"
+            },
+            { 
+                text: "Structurer une étude de faisabilité avec données économiques et techniques", 
+                category: "Augmentation",
+                person: "Echar Péz",
+                service: "Directeur développement"
+            },
+            { 
+                text: "Établir une estimation financière de projet à partir de données et ratios", 
+                category: "Augmentation",
+                person: "Echar Péz",
+                service: "Directeur développement"
+            },
+
+            // Cas d'Automatisation  
+            { 
+                text: "Intégrer automatiquement les demandes papier dans l'ERP via reconnaissance de contenu", 
+                category: "Automatisation",
+                person: "Marie Charlotte Le Charreau",
+                service: "Directrice générale adjointe"
+            },
+            { 
+                text: "Automatiser l'extraction de tableaux de suivi location depuis Prem", 
+                category: "Automatisation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Gérer automatiquement les appels SVI avec suivi conversationnel", 
+                category: "Automatisation",
+                person: "Marie Charlotte Le Charreau",
+                service: "Directrice générale adjointe"
+            },
+            { 
+                text: "Vérifier la cohérence bancaire entre écritures internes et données Linkky", 
+                category: "Automatisation",
+                person: "Pascale Sultana",
+                service: "Dir Finance/admin"
+            },
+            { 
+                text: "Réaliser un rapprochement bancaire complet automatisé", 
+                category: "Automatisation",
+                person: "Pascale Sultana",
+                service: "Dir Finance/admin"
+            },
+            { 
+                text: "Filtrer et classer les alertes techniques par criticité", 
+                category: "Automatisation",
+                person: "David Noch",
+                service: "Adjoint DSI"
+            },
+            { 
+                text: "Générer automatiquement un rapport de supervision périodique", 
+                category: "Automatisation",
+                person: "David Noch",
+                service: "Adjoint DSI"
+            },
+            { 
+                text: "Comparer automatiquement les candidatures selon critères définis", 
+                category: "Automatisation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Calculer automatiquement le solde des absences depuis HOROQUARTZ", 
+                category: "Automatisation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Générer automatiquement un tableau d'absences pour validation", 
+                category: "Automatisation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Compiler automatiquement les indicateurs RH d'absentéisme", 
+                category: "Automatisation",
+                person: "Aurélie Demareai",
+                service: "DRH"
+            },
+            { 
+                text: "Pré-remplir automatiquement un état des lieux selon le logement", 
+                category: "Automatisation",
+                person: "Julie Jerbeau",
+                service: "Secrétaire générale"
+            },
+            { 
+                text: "Générer automatiquement un tableau de bord d'activité vente", 
+                category: "Automatisation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Renseigner automatiquement les encaissements selon les données locataires", 
+                category: "Automatisation",
+                person: "Pierre Richarmzentier",
+                service: "Directeur commercial"
+            },
+            { 
+                text: "Générer automatiquement des requêtes SQL à partir d'indicateurs métier", 
+                category: "Automatisation",
+                person: "Sébastien Cherré",
+                service: "DSI"
+            },
+            { 
+                text: "Compiler des données de marché dans un tableau Excel structuré pour étude d'acquisition", 
+                category: "Automatisation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Construire un tableau de bord à partir de fichiers Excel multi-onglets et d'extractions Prem", 
+                category: "Automatisation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Identifier automatiquement des créneaux communs pour entretiens", 
+                category: "Automatisation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Cartographier automatiquement les solutions digitales internes", 
+                category: "Automatisation",
+                person: "Transverse",
+                service: "Transverse",
+                isTransverse: true
+            },
+            { 
+                text: "Automatiser la saisie des résultats de consultation dans MARCO", 
+                category: "Automatisation",
+                person: "Fabienne Fenion",
+                service: "Achat"
+            }
+        ];
+
+        let currentFilteredCases = {
+            augmentation: [],
+            automatisation: []
+        };
+
+        // Initialiser les données au chargement
+        function initializeData() {
+            currentFilteredCases.augmentation = allUseCases.filter(uc => uc.category === "Augmentation");
+            currentFilteredCases.automatisation = allUseCases.filter(uc => uc.category === "Automatisation");
+            
+            updateCounts();
+        }
+
+        // Mettre à jour les compteurs
+        function updateCounts() {
+            const augmentationCountEl = document.getElementById('augmentationCount');
+            const automatisationCountEl = document.getElementById('automatisationCount');
+            
+            if (augmentationCountEl) {
+                augmentationCountEl.textContent = `${currentFilteredCases.augmentation.length} cas d'augmentation`;
+            }
+            if (automatisationCountEl) {
+                automatisationCountEl.textContent = `${currentFilteredCases.automatisation.length} cas d'automatisation`;
+            }
+        }
+
+        // Navigation avec historique
+        function showPage(pageId) {
+            // Ajouter à l'historique seulement si ce n'est pas un retour
+            if (navigationHistory[navigationHistory.length - 1] !== pageId) {
+                navigationHistory.push(pageId);
+            }
+            
+            // Masquer toutes les pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Afficher la page sélectionnée
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                targetPage.classList.add('fade-in');
+            }
+            
+            // Mettre à jour la navigation
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            const activeNavItem = Array.from(document.querySelectorAll('.nav-item'))
+                .find(item => 
+                    (pageId === 'accueil' && item.textContent === 'Accueil') ||
+                    (pageId === 'exploration' && item.textContent === 'Cas d\'usage') ||
+                    (pageId === 'comite' && item.textContent === 'Comité Éthique') ||
+                    (pageId === 'augmentation' && item.textContent === 'Cas d\'usage') ||
+                    (pageId === 'automatisation' && item.textContent === 'Cas d\'usage')
+                );
+            
+            if (activeNavItem) {
+                activeNavItem.classList.add('active');
+            }
+            
+            // Gérer le breadcrumb
+            updateBreadcrumb(pageId);
+            
+            // Générer le contenu si nécessaire
+            if (pageId === 'augmentation') {
+                renderCases('augmentation');
+            } else if (pageId === 'automatisation') {
+                renderCases('automatisation');
+            }
+        }
+
+        // Fonction de retour
+        function goBack() {
+            if (navigationHistory.length > 1) {
+                navigationHistory.pop(); // Retirer la page actuelle
+                const previousPage = navigationHistory[navigationHistory.length - 1];
+                showPage(previousPage);
+            }
+        }
+
+        // Mettre à jour le breadcrumb
+        function updateBreadcrumb(pageId) {
+            const breadcrumb = document.getElementById('breadcrumb');
+            const currentPageBreadcrumb = document.getElementById('currentPageBreadcrumb');
+            
+            if (pageId === 'accueil') {
+                breadcrumb.style.display = 'none';
+            } else {
+                breadcrumb.style.display = 'block';
+                
+                const pageNames = {
+                    'exploration': 'Cas d\'usage',
+                    'augmentation': 'Augmentation',
+                    'automatisation': 'Automatisation',
+                    'comite': 'Comité Éthique'
+                };
+                
+                currentPageBreadcrumb.textContent = pageNames[pageId] || pageId;
+            }
+        }
+
+        // Rendu des cas d'usage
+        function renderCases(type) {
+            const grid = document.getElementById(type + 'Grid');
+            const cases = currentFilteredCases[type];
+            
+            if (cases.length === 0) {
+                grid.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: rgba(255,255,255,0.6);">
+                        <p>Aucun cas d'usage trouvé pour cette recherche.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            grid.innerHTML = cases.map((useCase, index) => `
+                <div class="case-card">
+                    <div class="case-text">${useCase.text}</div>
+                    <div class="case-meta">
+                        <div class="case-details">
+                            <div class="case-person">👤 ${useCase.person}</div>
+                            <div class="case-service">🏢 ${useCase.service}</div>
+                            ${useCase.isTransverse ? '<div class="case-transverse">🔄 Cas transverse</div>' : ''}
+                        </div>
+                        <div class="badge badge-${type}">
+                            ${type === 'augmentation' ? '🚀 Augmentation' : '⚙️ Automatisation'}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filtrage des cas d'usage
+        function filterCases(type) {
+            const searchInput = document.getElementById('search' + type.charAt(0).toUpperCase() + type.slice(1));
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            const allCasesOfType = allUseCases.filter(uc => 
+                uc.category === (type === 'augmentation' ? 'Augmentation' : 'Automatisation')
+            );
+            
+            if (searchTerm === '') {
+                currentFilteredCases[type] = allCasesOfType;
+            } else {
+                currentFilteredCases[type] = allCasesOfType.filter(useCase =>
+                    useCase.text.toLowerCase().includes(searchTerm) ||
+                    useCase.person.toLowerCase().includes(searchTerm) ||
+                    useCase.service.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            renderCases(type);
+            updateCounts();
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeData();
+        });
+    </script>
+</body>
+</html>
